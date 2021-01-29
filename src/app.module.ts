@@ -6,6 +6,7 @@ import { UserModule } from './modules/user/user.module';
   imports: [
     UserModule,
     GraphQLModule.forRoot({
+      playground: true,
       autoSchemaFile: 'schema.gql',
     }),
   ],
